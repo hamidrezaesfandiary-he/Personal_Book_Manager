@@ -19,7 +19,13 @@ count = int(input("How many books do you want to add? "))
 books = []
 
 for i in range(count):
-    book = input("Enter book: ")
+    book_name = input("Enter book: ")
+    books.append(book_name)
+    priority = input("enter priority(low, medium, high): ").lower()
+    book = {
+        "name": book_name, 
+        "priority": priority
+    }
     books.append(book)
 
 save_books(books)
