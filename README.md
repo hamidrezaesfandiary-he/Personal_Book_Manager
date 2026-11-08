@@ -24,20 +24,22 @@ Personal_Book_Manager/
 ├───screenshots
 │       image.png
 ```
+
 ## File Description
 
-| File                 | Description                                             |
+| File | Description |
 | -------------------- | ------------------------------------------------------- |
-| `main.py`            | Main file used to run the quiz game                     |
-| `books.py`        | Stores questions and answers                            |
-| `requirements.txt`   | Lists the Python packages needed for the project        |
-| `.env.example`       | Shows the environment variables needed by the project   |
-| `.gitignore`         | Tells Git which files and folders should not be tracked |
-| `README.md`          | Contains the project documentation                      |
-| `screenshots/`          | Stores project screenshots                              |
-| `gifs/`              | Stores demo GIF files                                   |
+| `main.py` | Main file used to run the quiz game |
+| `books.py` | Stores questions and answers |
+| `requirements.txt` | Lists the Python packages needed for the project |
+| `.env.example` | Shows the environment variables needed by the project |
+| `.gitignore` | Tells Git which files and folders should not be tracked |
+| `README.md` | Contains the project documentation |
+| `screenshots/` | Stores project screenshots |
+| `gifs/` | Stores demo GIF files |
 
 ## Features
+
 - add multiple tasks
 - save tasks
 - load save tasks
@@ -45,39 +47,44 @@ Personal_Book_Manager/
 - set task priority
 
 ## Book Priority
+
 Each book can have one of these priority levels:
+
 - low
 - medium
 - high
 
 ## Requirements
+
 - python
 - python-dotenv
 
-## Installation 
-Install the require packages
+## Installation
+
+Install the required packages.
 
 ```bash
-
 python -m pip install -r requirements.txt
-
 ```
 
-## Envoirment setup
-Create a `.env` file in the project folder
+## Environment Setup
 
-Use `.env.example` file as a template
+Create a `.env` file in the project folder.
 
-Add your admin password 
+Use the `.env.example` file as a template.
+
+Add your admin password.
 
 ```env
 ADMIN_PASSWORD = "YOUR_PASSWORD_HERE"
 ```
-Replace `YOUR_PASSWORD_HERE` with your own addmin password
 
-## Run the program
+Replace `YOUR_PASSWORD_HERE` with your own admin password.
 
-Run the main file: 
+## Run the Program
+
+Run the main file:
+
 ```bash
 python main.py
 ```
@@ -93,19 +100,24 @@ python main.py
 7. You enter the book names.
 8. The program displays and saves your books.
 
-
 ## Screenshot
-![](screenshots\image2.png)
+
+![](screenshots/image2.png)
 
 ## Demo
-![](gifs\demo.gif)
+
+![](gifs/demo.gif)
 
 ## Troubleshooting
+
 ### FileNotFoundError
+
 1. **What does it mean?**
+
 The program cannot find the required file.
 
 2. **Why might it happen?**
+
 The program may be running from the wrong directory, or a required file may be missing.
 
 3. **What should I check first?**
@@ -113,32 +125,47 @@ The program may be running from the wrong directory, or a required file may be m
 I check the project folder and make sure I am running the program from the correct location.
 
 ### JSONDecodeError
+
 1. **What does it mean?**
+
 The program cannot read the JSON data correctly.
 
 2. **Why might it happen?**
+
 The `books.json` file may be empty or contain invalid JSON data.
+
 3. **What should I check first?**
+
 I check whether `books.json` contains valid JSON data.
 
 ### ModuleNotFoundError: No module named 'dotenv'
+
 1. **What does it mean?**
+
 Python cannot find the `python-dotenv` package.
 
 2. **Why might it happen?**
+
 The required package has not been installed in the current Python environment.
 
 3. **What should I check first?**
+
 I check the installed packages and make sure `python-dotenv` is installed.
 
 ### Admin Password Not Working
+
 1. **What does it mean?**
+
 The program cannot read or verify the Admin Mode password.
 
 2. **Why might it happen?**
+
 The `.env` file may be missing, the variable name may be incorrect, or the password may not match.
 
 3. **What should I check first?**
+
 I check that the `.env` file exists and contains the correct variable:
+
 `BOOK_MANAGER_ADMIN_PASSWORD`
+
 I also check that the password is correct and `load_dotenv()` is called in the program.
