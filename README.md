@@ -42,6 +42,13 @@ Personal_Book_Manager/
 - save tasks
 - load save tasks
 - admin mode
+- set task priority
+
+## Book Priority
+Each book can have one of these priority levels:
+- low
+- medium
+- high
 
 ## Requirements
 - python
@@ -88,7 +95,7 @@ python main.py
 
 
 ## Screenshot
-![run project](screenshots\image.png)
+![](screenshots\image2.png)
 
 ## Demo
 ![](gifs\demo.gif)
