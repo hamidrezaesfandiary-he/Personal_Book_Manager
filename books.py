@@ -1,18 +1,22 @@
 import json
 
+
 def show_books(books):
+    print("-------- Your books list --------")
+
     for book in books:
         print("Book:", book["name"])
         print("Priority:", book["priority"])
         print()
 
+
 def load_books():
     try:
         with open("books.json", "r", encoding="utf-8") as file:
             return json.load(file)
-
     except FileNotFoundError:
         return []
+
 
 def save_books(books):
     with open("books.json", "w", encoding="utf-8") as file:
