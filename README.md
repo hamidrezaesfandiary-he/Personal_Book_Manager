@@ -2,6 +2,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue?logoColor=white)
 
+This project helps users manage their personal book collection.
+
 ## Project Structure
 
 ```text
