@@ -5,7 +5,7 @@ import os
 load_dotenv()
 
 name = input("enter your name: ")
-print("welcome", name)
+print("Welcome back to the book manager,", name)
 
 admin_mode = input("do you want to enter admin mode (yes/no)? ")
 
