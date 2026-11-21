@@ -37,8 +37,7 @@ for i in range(count):
     }
 
     books.append(book)
-    print("Book added successfully")
-
+print(f"{book_name} added successfully")
 show_books(books)
 print(f"Total number of books: {len(books)}")
 save_books(books)
